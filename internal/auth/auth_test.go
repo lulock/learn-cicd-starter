@@ -1,15 +1,15 @@
 package auth
 
 import (
-	"testing"
 	"net/http"
 	"reflect"
+	"testing"
 )
 
 func TestGetAPIKey(t *testing.T) {
 	tests := []struct {
 		input http.Header
-		want string
+		want  string
 	}{
 		{
 			input: http.Header{
