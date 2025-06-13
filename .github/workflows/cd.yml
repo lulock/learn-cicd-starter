@@ -19,7 +19,6 @@ jobs:
       - name: Build app
         run: bash scripts/buildprod.sh
 
-      - name: gcp
       - id: 'auth'
         uses: 'google-github-actions/auth@v2'
         with:
